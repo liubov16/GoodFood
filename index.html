@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- кодировки -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- стили -->
+	<link rel="stylesheet" href="css/simplebar.css">
+	<link href="css/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- заголовок страницы -->
+	<title>GoodFood</title>
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<!-- scroll-to-the-top -->
+		<a class="to-top" href="#">
+			<div class="to-top__arrow"></div>
+		</a>
+
+		<!-- mobile burger menu -->
+		<nav class="mobile">
+			<a class="mobile__area" href="#"></a>
+			<div class="mobile__body">
+				<div class="mobile__content">
+					<a class="mobile__link" href="">Menu</a>
+					<a class="mobile__link" href="">Delivery</a>
+				</div>
+			</div>
+		</nav>
+
+		<!-- popups ----------------------------->
+		<div id="popup-location" class="popup popup__location">
+			<div class="popup__body">
+				<div class="popup__content">
+					<div class="popup__title">Make an order</div>
+					<p class="popup__p">
+						<img class="popup__icon" src="img/location.png" alt="">
+						<input type="text" class="popup__input" placeholder="Your location">
+					</p>
+					<ul class="popup__list">
+						<li class="list__item">Kiev</li>
+						<li class="list__item">Hostomel</li>
+						<li class="list__item">Bucha</li>
+						<li class="list__item">Irpen</li>
+						<li class="list__item">Odessa</li>
+						<li class="list__item">Lviv</li>
+						<li class="list__item">Kharkiv</li>
+						<li class="list__item">Dnipro</li>
+						<li class="list__item">Kherson</li>
+						<li class="list__item">Volyn</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div id="popup-login" class="popup popup__login">
+			<div class="popup__body">
+				<div class="popup__content">
+					<p class="popup__p">Username</p>
+					<input type="text" class="popup__input">
+					<p class="popup__p">Password</p>
+					<input type="text" class="popup__input">
+					<div class="popup__links">
+						<a class="links__login" href="#">Login</a>
+						<a class="links__signup" href="#">Sign Up</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- main content ----------------->
+
+		<header class="header">
+			<!-- navigation -->
+			<nav class="header__nav lock-padding">
+				<div class="container">
+					<!-- mobile burger mobile -->
+					<div class="nav__column">
+						<a class="mobile__open" href="">
+							<img class="mobile__img" src="img/mobile.png" alt="">
+						</a>
+					</div>
+					<!-- links -->
+					<div class="nav__column">
+						<a class="nav__link" href="#menu">Menu</a>
+						<a class="nav__link" href="#delivery">Delivery</a>
+					</div>
+					<!-- logo -->
+					<a href="#">
+						<img class="logo" src="img/logo.png" alt="#">
+					</a>
+					<!-- user -->
+					<div class="nav__column">
+						<!-- <a class="nav__signup" href="#popup-login">Sign Up</a> -->
+						<a class="nav__login popup-link" href="#popup-login">Login</a>
+					</div>
+				</div>
+			</nav>
+			<!-- intro -->
+			<div class="header__intro">
+				<div class="container">
+					<div data-aos="fade-right" class="intro__content">
+						<h1 class="intro__title">Yummy food - it is good!</h1>
+						<p class="intro__subtitle">We create delicious meal and deliver it to your home</p>
+						<a class="intro__button popup-link" href="#popup-location">Order</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- how it works -->
+		<section class="howorks">
+			<div class="container">
+				<h2 class="section__title">How it works</h2>
+				<div class="howorks__content">
+					<div data-aos="zoom-in" data-aos-once="true" class="howorks__column">
+						<div class="howorks__img img-1"></div>
+						<p class="howorks__title">PLACE ORDER</p>
+						<p class="howorks__text">Select from our wide variety of signature dishes, custom, or specialty meal
+							options. Pick up in Baton Rouge or choose between in-store pickup or delivery in the New Orleans
+							Metro
+							Area</p>
+					</div>
+					<div data-aos="zoom-in" data-aos-delay="300" class="howorks__column">
+						<div class="howorks__img img-2"></div>
+						<p class="howorks__title">COOK</p>
+						<p class="howorks__text">Our staff will carefully prepare, cook, and package all of your meals and
+							have
+							them fresh and ready to go!</p>
+					</div>
+					<div data-aos="zoom-in" data-aos-delay="600" class="howorks__column">
+						<div class="howorks__img img-3"></div>
+						<p class="howorks__title">PICKUP / DELIVER</p>
+						<p class="howorks__text">You choose whether to pick up your meals in our very own brick and mortar
+							location or even choose a delivery method in case you are busy. We never want you to miss out</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- menu -->
+		<section id="menu" class="menu">
+
+			<div data-aos="fade-up" data-aos-once="true" data-aos-duration="2000" class="menu__body">
+				<h2 class="section__title">Online Menu</h2>
+				<p class="section__subtitle">Search for delicious dishes in our online menu</p>
+
+				<div data-simplebar class="menu__content">
+					<div class="menu__row">
+						<div class="menu__column">
+							<div class="menu__img img-1"></div>
+							<p class="menu__name">Baked Herb Roasted Tofu with Green Beans (Vegan)
+								served with red potatoes</p>
+						</div>
+						<div class="menu__column">
+							<div class="menu__img img-2"></div>
+							<p class="menu__name">Balsamic Chicken Salad (16 oz)
+								gluten free, dairy free, nut free</p>
+						</div>
+						<div class="menu__column">
+							<div class="menu__img img-3"></div>
+							<p class="menu__name">Barb's Boobie Milk Lactation Cookies (1/2 Dozen)
+								Whole Wheat Oatmeal and Chocolate Chip Lactation Cookies.</p>
+						</div>
+					</div>
+					<div class="menu__row">
+						<div class="menu__column">
+							<div class="menu__img img-4"></div>
+							<p class="menu__name">BBQ Chicken Cauliflower Crust Pizza
+								Served with raw celery, carrot, and yogurt ranch</p>
+						</div>
+						<div class="menu__column">
+							<div class="menu__img img-5"></div>
+							<p class="menu__name">BBQ Veggie Cauliflower Crust Pizza
+								served with carrot, celery, and yogurt ranch</p>
+						</div>
+						<div class="menu__column">
+							<div class="menu__img img-6"></div>
+							<p class="menu__name">Chia Pudding Fresh Berry Parfait
+								Chia Pudding and Paleo</p>
+						</div>
+					</div>
+					<div class="menu__row">
+						<div class="menu__column">
+							<div class="menu__img img-7"></div>
+							<p class="menu__name">Chicken Caesar Wrap
+								Lemon Pepper Chicken with crisp romaine lettuce, whole wheat wrap.</p>
+						</div>
+						<div class="menu__column">
+							<div class="menu__img img-8"></div>
+							<p class="menu__name">Chicken Salad Wrap
+								Chicken salad on wheat tortilla served with fresh fruit</p>
+						</div>
+						<div class="menu__column">
+							<div class="menu__img img-9"></div>
+							<p class="menu__name">Cinnamon Roll Overnight Oatmeal
+								Topped with a Cream Cheese and Cinnamon Syrup Swirl</p>
+						</div>
+					</div>
+					<div class="menu__row">
+						<div class="menu__column">
+							<div class="menu__img img-10"></div>
+							<p class="menu__name">Cranberry Energy Bites (3 per container)
+								An energy packed blend of oats, peanut butter, cranberry and honey</p>
+						</div>
+						<div class="menu__column">
+							<div class="menu__img img-11"></div>
+							<p class="menu__name">Egg Muffins
+								served with Almonds and Fruit</p>
+						</div>
+						<div class="menu__column">
+							<div class="menu__img img-12"></div>
+							<p class="menu__name">Flank with Green Beans
+								served with Red Potato wedges</p>
+						</div>
+					</div>
+					<div class="menu__row">
+						<div class="menu__column">
+							<div class="menu__img img-13"></div>
+							<p class="menu__name">Flank with Green Beans (Low Carb)
+								served with Turnip Mash</p>
+						</div>
+						<div class="menu__column">
+							<div class="menu__img img-14"></div>
+							<p class="menu__name">French Toast
+								Whole wheat French Toast served with Yogurt Berry Parfait</p>
+						</div>
+						<div class="menu__column">
+							<div class="menu__img img-15"></div>
+							<p class="menu__name">French Toast (Vegan)
+								Whole wheat French Toast served with berries and granola.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="menu__bottom">
+					<button class="menu__button">View entire menu</button>
+				</div>
+			</div>
+		</section>
+
+		<!-- reviews -->
+		<section class="reviews">
+			<div class="container">
+				<h2 class="section__title">Reviews</h2>
+				<p class="reviews__comment">Food is prepared perfectly. Makes meal prepping more
+					convenient and saves time.
+					Taste great. Highly recommend.
+					<span>Alexis Tribbiani</span>
+				</p>
+				<p class="reviews__comment">I can't say enough good things about this place, friendly and inviting
+					staff
+					that are happy to answer any questions you might have, grab and go meals that will leave you feeling
+					great. Not to mention I spend less money here than at any fast food place.
+					<span>Anton Crot</span>
+				</p>
+				<p class="reviews__comment">I have always been so impressed with everything we've ever had from here.
+					Both
+					quality and taste!!!
+					<span>Bella Rible</span>
+				</p>
+			</div>
+		</section>
+
+		<!-- dish of the week -->
+		<section class="dish">
+			<div class="container">
+				<h2 class="section__title">Dish of the week</h2>
+				<p class="section__subtitle">Find the most popular dishes</p>
+				<div data-aos="flip-left" data-aos-once="true" class="gallery">
+					<div class="big">
+						<img src="img/gallery2.jpg" alt="Старт" />
+						<p>Royale burger</p>
+					</div>
+					<div class="small">
+						<a href="img/gallery2.jpg"><img src="img/gallery2.jpg" alt="1" /></a>
+						<a href="img/gallery3.jpg"><img src="img/gallery3.jpg" alt="2" /></a>
+						<a href="img/gallery4.jpg"><img src="img/gallery4.jpg" alt="3" /></a>
+						<a href="img/gallery5.jpg"><img src="img/gallery5.jpg" alt="4" /></a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__column">
+					<div class="column__section">
+						<p class="footer__company">GoodFood</p>
+						<a class="footer__link" href="tel:+000000000">+990000000</a>
+						<a class="footer__link" href="mailto:gf.support@email.com">gf.support@email.com</a>
+
+						<div class="footer__social">
+							<a class="social__item -inst"></a>
+							<a class="social__item -faceb"></a>
+							<a class="social__item -twit"></a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__column">
+					<div class="column__section">
+						<p class="section__name">GoodFood</p>
+						<ul class="section__list">
+							<a class="list__item">Current Menu</a>
+							<a class="list__item">Contact Us</a>
+							<a class="list__item">Privacy Policy</a>
+							<a class="list__item">F.A.Q.</a>
+							<a class="list__item">Pickup Locations</a>
+							<a class="list__item">Grab & Go</a>
+							<a class="list__item">Blog</a>
+						</ul>
+					</div>
+					<div class="column__section">
+						<p class="section__name">Meal Ordering</p>
+						<ul class="section__list">
+							<a class="list__item">Subscription Meal Selection</a>
+							<a class="list__item">À la Carte</a>
+							<a class="list__item">Proteins by the Pound</a>
+							<a class="list__item">Custom Meal Builder</a>
+							<a class="list__item">Extras</a>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+
+
+	<!-- скрипты -->
+	<script src="js/simplebar.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

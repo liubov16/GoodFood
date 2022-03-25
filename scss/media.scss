@@ -1,0 +1,238 @@
+.container {
+	@include lg {
+		max-width: 1024px;
+	}
+	@include md {
+		max-width: 768px;
+	}
+	@include sm {
+		max-width: 640px;
+	}
+	@include lt {
+		max-width: 520px;
+	}
+	@include mn {
+		max-width: 414px;
+	}
+	@include es {
+		max-width: 360px;
+	}
+}
+
+// main
+.header {
+	.header__intro {
+		@include sm {
+			background-position: -200px;
+			height: 600px;
+		}
+		@include lt {
+			background-position: -300px;
+			height: 600px;
+		}
+		@include mn {
+			background-position: -400px;
+			height: 600px;
+		}
+		@include es {
+			background-position: -500px;
+			height: 600px;
+		}
+		.container {
+			.intro__content {
+				@include md {
+					height: 350px;
+					padding: 50px;
+				}
+				@include sm {
+					height: 340px;
+					padding: 40px;
+				}
+				@include lt {
+					padding: 30px;
+				}
+				@include mn {
+					height: 300px;
+					padding: 25px;
+				}
+				@include es {
+					height: 270px;
+					padding: 20px;
+				}
+				.intro__title {
+					@include sm {
+						font-size: 60px;
+					}
+					@include lt {
+						font-size: 50px;
+					}
+					@include mn {
+						font-size: 40px;
+					}
+					@include es {
+						font-size: 30px;
+					}
+				}
+				.intro__subtitle {
+					@include mn {
+						font-size: 16px;
+					}
+					@include es {
+						font-size: 15px;
+					}
+				}
+				.intro__button {
+					@include es {
+						width: 200px;
+						height: 45px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.menu {
+	.menu__content {
+		.menu__row {
+			@include lg {
+				width: 30%;
+				margin: 0 30px 0 0 !important;
+				display: inline-block !important;
+			}
+			@include md {
+				width: 35%;
+				margin: 0 130px 0 0 !important;
+				display: inline-block !important;
+			}
+			@include sm {
+				width: 100%;
+				margin: 0 0px 0 0 !important;
+				display: inline-block !important;
+			}
+			@include lt {
+				width: 100%;
+				margin: 0 0px 0 0 !important;
+				display: inline-block !important;
+			}
+			@include mn {
+				width: 100%;
+				margin: 0 0px 0 0 !important;
+				display: inline-block !important;
+			}
+			@include es {
+				width: 100%;
+				margin: 0 0px 0 0 !important;
+				display: inline-block !important;
+			}
+			.menu__column {
+				@include lg {
+					margin-bottom: 10px;
+				}
+				@include md {
+					margin-bottom: 10px;
+				}
+				@include sm {
+					width: 100% !important;
+					margin-bottom: 10px;
+				}
+				@include lt {
+					width: 100% !important;
+					margin-bottom: 10px;
+				}
+				@include mn {
+					width: 100% !important;
+					margin-bottom: 10px;
+				}
+				@include es {
+					width: 100% !important;
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+}
+
+.howorks {
+	.container {
+		.howorks__content {
+			@include md {
+				flex-wrap: wrap;
+			}
+			@include sm {
+				flex-wrap: wrap;
+			}
+			@include lt {
+				flex-wrap: wrap;
+			}
+			@include mn {
+				flex-wrap: wrap;
+			}
+			@include es {
+				flex-wrap: wrap;
+			}
+			.howorks__column {
+				@include sm {
+					width: 100%;
+					margin-bottom: 40px;
+				}
+				@include lt {
+					width: 100%;
+					margin-bottom: 40px;
+				}
+				@include mn {
+					width: 100%;
+					margin-bottom: 40px;
+				}
+				@include es {
+					width: 100%;
+					margin-bottom: 40px;
+				}
+			}
+			.howorks__column:last-child {
+				@include md {
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+}
+
+.reviews {
+	.container {
+		@include md {
+			height: 260px;
+		}
+		@include sm {
+			height: 290px;
+		}
+		@include lt {
+			height: 260px;
+		}
+		@include mn {
+			height: 350px;
+		}
+		@include es {
+			height: 430px;
+		}
+	}
+}
+
+.footer {
+	.container {
+		@include mn {
+			height: 600px;
+		}
+		@include es {
+			height: 600px;
+		}
+		.footer__column {
+			@include mn {
+				width: 100%;
+			}
+			@include es {
+				width: 100%;
+			}
+		}
+	}
+}
